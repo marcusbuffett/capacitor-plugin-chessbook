@@ -10,7 +10,7 @@ export class AudioPlayingCheckerWeb
 		console.log("ECHO", options);
 		return options;
 	}
-	async isPlayingAudio(): Promise<boolean> {
-		return false;
+	async isPlayingAudio(): Promise<{ playing: boolean }> {
+		return { playing: false };
 	}
 }
