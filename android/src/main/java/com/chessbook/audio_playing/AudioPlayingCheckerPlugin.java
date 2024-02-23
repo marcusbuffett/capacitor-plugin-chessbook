@@ -19,4 +19,11 @@ public class AudioPlayingCheckerPlugin extends Plugin {
         ret.put("value", implementation.echo(value));
         call.resolve(ret);
     }
+
+    @PluginMethod
+    public void isPlayingAudio(PluginCall call) {
+        JSObject ret = new JSObject();
+        ret.put("playing", false);
+        call.resolve(ret);
+    }
 }

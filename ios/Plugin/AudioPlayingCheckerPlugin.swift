@@ -1,5 +1,6 @@
 import Foundation
 import Capacitor
+import AVFoundation
 
 /**
  * Please read the Capacitor iOS Plugin Development Guide
@@ -13,6 +14,12 @@ public class AudioPlayingCheckerPlugin: CAPPlugin {
         let value = call.getString("value") ?? ""
         call.resolve([
             "value": implementation.echo(value)
+        ])
+    }
+
+    @objc func isPlayingAudio(_ call: CAPPluginCall) {
+        call.resolve([
+            "playing": AVAudioSession.sharedInstance().secondaryAudioShouldBeSilencedHint
         ])
     }
 }
