@@ -6,5 +6,7 @@ export declare class AudioPlayingCheckerWeb extends WebPlugin implements AudioPl
     }): Promise<{
         value: string;
     }>;
-    isPlayingAudio(): Promise<boolean>;
+    isPlayingAudio(): Promise<{
+        playing: boolean;
+    }>;
 }

@@ -11,7 +11,7 @@ var capacitorAudioPlayingChecker = (function (exports, core) {
             return options;
         }
         async isPlayingAudio() {
-            return false;
+            return { playing: false };
         }
     }
 

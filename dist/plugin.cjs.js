@@ -14,7 +14,7 @@ class AudioPlayingCheckerWeb extends core.WebPlugin {
         return options;
     }
     async isPlayingAudio() {
-        return false;
+        return { playing: false };
     }
 }
 

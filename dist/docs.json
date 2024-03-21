@@ -23,9 +23,9 @@
       },
       {
         "name": "isPlayingAudio",
-        "signature": "() => Promise<boolean>",
+        "signature": "() => Promise<{ playing: boolean; }>",
         "parameters": [],
-        "returns": "Promise<boolean>",
+        "returns": "Promise<{ playing: boolean; }>",
         "tags": [],
         "docs": "",
         "complexTypes": [],

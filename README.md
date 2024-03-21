@@ -39,10 +39,10 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 ### isPlayingAudio()
 
 ```typescript
-isPlayingAudio() => Promise<boolean>
+isPlayingAudio() => Promise<{ playing: boolean; }>
 ```
 
-**Returns:** <code>Promise&lt;boolean&gt;</code>
+**Returns:** <code>Promise&lt;{ playing: boolean; }&gt;</code>
 
 --------------------
 

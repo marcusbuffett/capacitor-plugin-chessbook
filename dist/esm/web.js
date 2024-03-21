@@ -5,7 +5,7 @@ export class AudioPlayingCheckerWeb extends WebPlugin {
         return options;
     }
     async isPlayingAudio() {
-        return false;
+        return { playing: false };
     }
 }
 //# sourceMappingURL=web.js.map

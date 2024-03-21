@@ -4,5 +4,7 @@ export interface AudioPlayingCheckerPlugin {
     }): Promise<{
         value: string;
     }>;
-    isPlayingAudio(): Promise<boolean>;
+    isPlayingAudio(): Promise<{
+        playing: boolean;
+    }>;
 }
